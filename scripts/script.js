@@ -1,6 +1,6 @@
 // Set starting life totals here
-var playerLife = 10;
-var hackerLife = 10;
+var playerLife = 5;
+var hackerLife = 5;
 
 // Message when the game is over
 var hackerWinnerMessage = "Game over: You got hacked!";
@@ -224,13 +224,21 @@ function playTurn() {
 }
 
 function revealCards(){
-  var j = 0;
-  var cardIndexes = shuffleArray([0,1,2]);
 
+
+  var j = 0;
+  var cardIndexes = shuffleArray([0, 1, 2]);
 
   // Get scenario cards
-  var randomScenarioIndex = Math.floor(Math.random() * (scenarios.length));
+  console.log("scenarios.length == " + scenarios.length);
+
+  var randomScenarioIndex = Math.floor(Math.random() * scenarios.length);
   var scenario = scenarios[randomScenarioIndex];
+  console.log(scenario.hackerCard.description);
+
+  scenarios.splice(randomScenarioIndex, 1);
+
+  console.log("scenarios.length after splice == " + scenarios.length);
 
   var hackerCard = scenario.hackerCard;
   var hackerCardEl = document.querySelector(".hacker-area .card");

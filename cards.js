@@ -102,5 +102,67 @@ var scenarios = [
         power : 1,
       }
     ]
+  }, 
+
+  {
+    hackerCard : {
+      description : "I hacked your system and all your data is deleted now.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "I follow the 3-2-1 backup rule. I have on-site as well as off-site location (cloud storage) backup.",
+        power : 4,
+      },
+      {
+        description : "I have my data backed up in local and external hard drive.",
+        power : 3,
+      },
+      {
+        description : "I never backed up my data in any way.",
+        power : 1,
+      }
+    ]
+  }, 
+
+  {
+    hackerCard : {
+      description : "I provided you my USB for content transfer.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "I use Anti-Virus Protection & Firewall to protect my system.",
+        power : 4,
+      },
+      {
+        description : "I refused to use your USB as my system was not having Anti-Virus Protection & Firewall.",
+        power : 3,
+      },
+      {
+        description : "I used your USB as I am not afraid of my system getting corrupted.",
+        power : 1,
+      }
+    ]
+  }, 
+  {
+    hackerCard : {
+      description : "I will crash your vulnerable system using ransomware attacks, malware and data breaches.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "You can't because I have turnned on Automatic Updates for my operating system.",
+        power : 4,
+      },
+      {
+        description : "I use web browsers such as Chrome or Firefox that receive frequent, automatic security updates.",
+        power : 3,
+      },
+      {
+        description : "I don't update my softwares nor do I download security updates.",
+        power : 1,
+      }
+    ]
   }
 ];
